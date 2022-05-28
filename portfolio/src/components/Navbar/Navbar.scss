@@ -1,0 +1,42 @@
+@import "../../styles/Functions.scss";
+
+.navbar {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    top: 0;
+}
+
+.navbar-links-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: space(10);
+}
+
+.navbar-links-logo {
+    flex: 1;
+    padding-right: space(10);
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: space(2.5);
+    font-weight: 600;
+}
+
+.navbar-link-text {
+    padding: space(3) space(2);
+}
+
+.navbar-link-logo {
+    padding: space(3) space(1);
+}

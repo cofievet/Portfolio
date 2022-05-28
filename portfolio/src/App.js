@@ -1,20 +1,24 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import About  from './components/About';
-import Projects from './components/Projects';
+import './App.scss';
+import Navbar from './components/Navbar/Navbar';
+import About from './components/About/About';
 import Experiences from './components/Experiences';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <div className="App">
         <Navbar />
-        <About />
-        <Projects />
-        <Experiences />
-        <Skills />
-        <Contact />
+        <div className='body'>
+          <Home />
+          <About />
+          <Experiences />
+          <Skills />
+          <Contact />
+        </div>
+      </div>
     </div>
   );
 }

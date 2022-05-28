@@ -1,1 +1,7 @@
-export default function Skills() { }
+export default function Skills() { 
+    return(
+        <div id="skills">
+            <div className="title">Skills</div>
+        </div>
+    )    
+}
