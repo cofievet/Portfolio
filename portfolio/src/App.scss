@@ -1,6 +1,13 @@
 @import "./styles/Functions.scss";
+@import "./styles/Variables.scss";
 
 .container {
+    border-bottom: solid 2px black;
+    padding-bottom: space(10);
+    padding: space(10) 0 space(10) 0;
+}
+
+.card-container {
     display: flex;
 }
 
@@ -18,17 +25,33 @@
     border: 0.5px solid black;
     margin: 16px;
     padding: 16px;
-    background-color: white;
     border-radius: 5px;
 }
 
 .body {
-    padding: 0 25% 0 25%;
-    z-index: 2;
-    margin-top: space(10);
+    padding: space(10) 10% 0 10%;
+    color: $text-color;
+    font-family: $font-family;
 }
 
 .title {
-    font-size: 1.2em;
+    font-size: space(3);
     font-weight: bold;
+    font-family: $font-family;
+    margin-bottom: space(3);
+    color: $title-color;
+}
+
+.flex {
+    flex: 1;
+}
+
+.citation {
+    color: $subtitle-color;
+    text-align: center;
+    margin: space(3);
+}
+
+.App {
+    background-color: $background-color;
 }

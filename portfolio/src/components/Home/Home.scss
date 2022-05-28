@@ -1,3 +1,25 @@
-.full-height{
-    height: 90vh;
+@import "../../styles/Functions.scss";
+@import "../../styles/Variables.scss";
+
+.home-container {
+    padding-top: space(20);
+}
+
+.home-title {
+    font-size: space(5);
+    font-family: $font-family;
+    margin-bottom: space(20);
+    text-align: center;
+}
+
+.home-subtitle{
+    font-family: $font-family;
+    font-size: space(2);
+    color: $subtitle-color;
+    margin: space(1);
+}
+
+.home-subtitle-body{
+    font-family: $font-family;
+    margin: space(1);
 }

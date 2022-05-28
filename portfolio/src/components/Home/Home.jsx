@@ -3,11 +3,21 @@ import './Home.scss'
 export default function Home() {
 
     return (
-        <div className='home container' id='home'>
-            <div className='card full-height'>Corentin Fievet</div>
-            <div className='container-column'>
-                <div className='card'>CDiscount</div>
-                <div className='card'>GForce racing</div>
+        <div className='container home-container' id='home'>
+            <div className='home-title'>
+                <div>Corentin Fiévet</div>
+                <div>Ingénieur d'études</div>
+                <div>Développeur .Net</div>
+            </div>
+            <div className='card-container'>
+                <div className='flex'>
+                    <div className='home-subtitle'>Poste actuel</div>
+                    <div className='home-subtitle-body'>Ingénieurs d'études pour CDiscount</div>
+                </div>
+                <div className='flex'>
+                    <div className='home-subtitle'>Project actuel</div>
+                    <div className='home-subtitle-body'>Project sur la gestion des données de Formula1</div>
+                </div>
             </div>
         </div>
     )
