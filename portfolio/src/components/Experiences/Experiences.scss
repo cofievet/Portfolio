@@ -1,0 +1,11 @@
+@import "../../styles/Functions.scss";
+@import "../../styles/Variables.scss";
+
+.experience{
+    display: flex;
+    margin: space(3);
+}
+
+.experience-title{
+    margin: 0 space(5) 0 0;
+}

@@ -1,0 +1,31 @@
+@import "../../styles/Functions.scss";
+@import "../../styles/Variables.scss";
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: space(3);
+}
+
+.skill {
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-logo-container {
+    display: flex;
+    padding: space(1) 0;
+}
+
+.skill-title {
+    font-weight: 1000;
+}
+
+.skill-logo {
+    font-size: 25px;
+    margin: 0 space(1) 0 0;
+}

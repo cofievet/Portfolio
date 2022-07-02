@@ -10,13 +10,13 @@ export default function Home() {
                 <div>Développeur .Net</div>
             </div>
             <div className='card-container'>
-                <div className='flex'>
-                    <div className='home-subtitle'>Poste actuel</div>
-                    <div className='home-subtitle-body'>Ingénieurs d'études pour CDiscount</div>
+                <div className='card'>
+                    <div className='card-title'>Poste actuel</div>
+                    <div className='card-body'>Ingénieurs d'études pour CDiscount</div>
                 </div>
-                <div className='flex'>
-                    <div className='home-subtitle'>Project actuel</div>
-                    <div className='home-subtitle-body'>Project sur la gestion des données de Formula1</div>
+                <div className='card'>
+                    <div className='card-subtitle'>Project actuel</div>
+                    <div className='card-body'>Project sur la gestion des données de Formula1</div>
                 </div>
             </div>
         </div>

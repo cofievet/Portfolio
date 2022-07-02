@@ -9,10 +9,11 @@ export default function Navbar() {
     return (
         <div className='navbar'>
             <div className="navbar-links-text">
-                <a href='#about' className='navbar-link navbar-link-text'>About</a>
+                <a href='#home' className='navbar-link navbar-link-text'>Corentin Fiévet</a>
+                <a href='#about' className='navbar-link navbar-link-text'>A propos de moi</a>
                 <a href='#experiences' className='navbar-link navbar-link-text'>Experiences</a>
-                <a href='#projects' className='navbar-link navbar-link-text'>Projects</a>
-                <a href='#skills' className='navbar-link navbar-link-text'>Skills</a>
+                <a href='#projects' className='navbar-link navbar-link-text'>Projets</a>
+                <a href='#skills' className='navbar-link navbar-link-text'>Compétences</a>
             </div>
             <div className='navbar-links-logo'>
                 <FontAwesomeIcon className='navbar-link navbar-link-logo' icon={faAt} />

@@ -21,11 +21,18 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    border: 0.5px solid black;
+    justify-content: center;
     margin: 16px;
     padding: 16px;
     border-radius: 5px;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    height: space(10);
+    border: 1px solid $primary-color;
+}
+
+.card-logo {
+    font-size: space(5);
 }
 
 .body {
@@ -43,13 +50,14 @@
 }
 
 .flex {
-    flex: 1;
+    display: flex;
 }
 
 .citation {
     color: $subtitle-color;
     text-align: center;
     margin: space(3);
+    font-weight: 600;
 }
 
 .App {

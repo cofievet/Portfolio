@@ -1,0 +1,39 @@
+@import "../../styles/Functions.scss";
+@import "../../styles/Variables.scss";
+
+.about-paragraph {
+    text-align: justify;
+    margin: space(2) 0;
+}
+
+.about {
+    margin: space(3);
+}
+
+.about-skills-container {
+    display: flex;
+    margin: space(3) 0;
+    flex-direction: column;
+}
+
+.about-skills-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.about-skill {
+    border: 1px solid $subtitle-color;
+    border-radius: space(1);
+    margin: space(1) space(1);
+    padding: space(1);
+    font-weight: 600;
+}
+
+// .skill-title {
+//     font-size: 1.2em;
+//     font-weight: 600;
+//     text-align: center;
+// }
