@@ -2,37 +2,41 @@
 @import "./styles/Variables.scss";
 
 .container {
-    border-bottom: solid 2px black;
-    padding-bottom: space(10);
-    padding: space(10) 0 space(10) 0;
+    &:not(:last-child) {
+        border-bottom: solid 2px black;
+        padding-bottom: space(10);
+    }
+
+    padding: space(5) 0 space(5) 0;
 }
 
 .card-container {
     display: flex;
-}
-
-.container-column {
-    display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .card {
     flex: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 16px;
-    padding: 16px;
-    border-radius: 5px;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    height: space(10);
+    margin: space(2) 0;
+    padding: space(2);
+    border-radius: space(1);
+    background-color: $secondary-color;
     border: 1px solid $primary-color;
 }
 
+.card-content {
+    flex: 1 1;
+}
+
+.card-title {
+    font-weight: 1000;
+    margin: space(2) 0;
+}
+
 .card-logo {
-    font-size: space(5);
+    flex: 40px;
 }
 
 .body {
@@ -55,8 +59,7 @@
 
 .citation {
     color: $subtitle-color;
-    text-align: center;
-    margin: space(3);
+    margin: space(3) 0;
     font-weight: 600;
 }
 

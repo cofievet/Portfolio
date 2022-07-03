@@ -9,11 +9,16 @@
 }
 
 .skill {
-    flex: 1;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin: 0 space(2);
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+    padding: space(2);
+    border-radius: space(1);
+    min-width: 175px;
 }
 
 .skill-logo-container {
@@ -27,5 +32,8 @@
 
 .skill-logo {
     font-size: 25px;
-    margin: 0 space(1) 0 0;
+
+    :not(:last-child) {
+        margin: 0 space(1) 0 0;
+    }
 }

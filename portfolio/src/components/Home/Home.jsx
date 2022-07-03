@@ -1,4 +1,7 @@
 import './Home.scss'
+import { faAt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
 
@@ -6,18 +9,14 @@ export default function Home() {
         <div className='container home-container' id='home'>
             <div className='home-title'>
                 <div>Corentin Fiévet</div>
-                <div>Ingénieur d'études</div>
-                <div>Développeur .Net</div>
+                <div>Ingénieur d'études Développeur .Net</div>
+                <div>CDiscount</div>
             </div>
-            <div className='card-container'>
-                <div className='card'>
-                    <div className='card-title'>Poste actuel</div>
-                    <div className='card-body'>Ingénieurs d'études pour CDiscount</div>
-                </div>
-                <div className='card'>
-                    <div className='card-subtitle'>Project actuel</div>
-                    <div className='card-body'>Project sur la gestion des données de Formula1</div>
-                </div>
+
+            <div>
+                <FontAwesomeIcon className='navbar-link navbar-link-logo' icon={faAt} />
+                <FontAwesomeIcon className='navbar-link navbar-link-logo' icon={faLinkedin} />
+                <FontAwesomeIcon className='navbar-link navbar-link-logo' icon={faGithub} />
             </div>
         </div>
     )

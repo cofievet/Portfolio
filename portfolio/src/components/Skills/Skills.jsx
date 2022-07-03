@@ -1,4 +1,5 @@
 import { faConfluence, faCss3, faGit, faHtml5, faJira, faJs, faReact, faSass, faVuejs } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Skills.scss'
 
@@ -15,10 +16,15 @@ export default function Skills() {
                 </div>
                 <div className="skill">
                     <div className="skill-logo-container">
-                        <FontAwesomeIcon className="skill-logo" icon={faHtml5} style={{ color: "#de6e3c" }}></FontAwesomeIcon>
-                        <FontAwesomeIcon className="skill-logo" icon={faCss3} style={{ color: "#53a7dc" }}></FontAwesomeIcon>
+                        <FontAwesomeIcon className="skill-logo" icon={faDatabase} style={{ color: "#de6e3c" }}></FontAwesomeIcon>
                     </div>
-                    <div className="skill-title">SQL & MongoDb</div>
+                    <div className="skill-title">SQL</div>
+                </div>
+                <div className="skill">
+                    <div className="skill-logo-container">
+                        <FontAwesomeIcon className="skill-logo" icon={faDatabase} style={{ color: "#de6e3c" }}></FontAwesomeIcon>
+                    </div>
+                    <div className="skill-title">MongoDb</div>
                 </div>
             </div>
             <div className="skills-container">
@@ -64,6 +70,6 @@ export default function Skills() {
                     <div className="skill-title">Git</div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
