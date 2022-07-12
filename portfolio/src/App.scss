@@ -1,5 +1,10 @@
 @import "./styles/Functions.scss";
 @import "./styles/Variables.scss";
+@import './styles/Title.scss';
+@import './styles/Timeline.scss';
+@import './styles/Skills.scss';
+@import './styles/Button.scss';
+
 
 .container {
     &:not(:last-child) {
@@ -45,13 +50,13 @@
     font-family: $font-family;
 }
 
-.title {
-    font-size: space(3);
-    font-weight: bold;
-    font-family: $font-family;
-    margin-bottom: space(3);
-    color: $title-color;
-}
+// .title {
+//     font-size: space(3);
+//     font-weight: bold;
+//     font-family: $font-family;
+//     margin-bottom: space(3);
+//     color: $title-color;
+// }
 
 .flex {
     display: flex;

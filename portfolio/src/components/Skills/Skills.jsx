@@ -9,12 +9,85 @@ export default function Skills() {
             <div className="title">Skills</div>
             <div className="skills-container">
                 <div className="skill">
-                    <div className="skill-logo-container">
-                        <FontAwesomeIcon className="skill-logo" icon={faHtml5} style={{ color: "#de6e3c" }}></FontAwesomeIcon>
+                    <div className='header-inline'>
+                        <div className='subtitle subtitle-inline'>Backend</div>
+                        <div>/</div>
+                        <div className="title title-inline">C#</div>
                     </div>
-                    <div className="skill-title">C#</div>
+                    <div className="bubble-skills">
+                        <div className="bubble-skill">C#</div>
+                        <div className="bubble-skill">.Net6</div>
+                        <div className="bubble-skill">.Net Framework</div>
+                    </div>
                 </div>
                 <div className="skill">
+                    <div className='header-inline'>
+                        <div className='subtitle subtitle-inline'>Frontend</div>
+                        <div>/</div>
+                        <div className="title title-inline">Framework javascript</div>
+                    </div>
+                    <div className="bubble-skills">
+                        <div className="bubble-skill">VueJs</div>
+                        <div className="bubble-skill">ReactJs</div>
+                    </div>
+                </div>
+                <div className="skill">
+                    <div className='header-inline'>
+                        <div className='subtitle subtitle-inline'>Base de données</div>
+                        <div>/</div>
+                        <div className="title title-inline">SQL & MongoDb</div>
+                    </div>
+                    <div className="bubble-skills">
+                        <div className="bubble-skill">C#</div>
+                        <div className="bubble-skill">.Net6</div>
+                        <div className="bubble-skill">MongoDb</div>
+                        <div className="bubble-skill">SQL</div>
+                        <div className="bubble-skill">Microservices</div>
+                    </div>
+                </div>
+            </div>
+            <div className="skills-container">
+                <div className="skill">
+                    <div className='header-inline'>
+                        <div className='subtitle subtitle-inline'>Backend</div>
+                        <div>/</div>
+                        <div className="title title-inline">C#</div>
+                    </div>
+                    <div className="bubble-skills">
+                        <div className="bubble-skill">C#</div>
+                        <div className="bubble-skill">.Net6</div>
+                        <div className="bubble-skill">MongoDb</div>
+                        <div className="bubble-skill">SQL</div>
+                        <div className="bubble-skill">Microservices</div>
+                    </div>
+                </div>
+                <div className="skill">
+                    <div className='header-inline'>
+                        <div className='subtitle subtitle-inline'>Frontend</div>
+                        <div>/</div>
+                        <div className="title title-inline">Framework javascript</div>
+                    </div>
+                    <div className="bubble-skills">
+                        <div className="bubble-skill">VueJs</div>
+                        <div className="bubble-skill">ReactJs</div>
+                    </div>
+                </div>
+                <div className="skill">
+                    <div className='header-inline'>
+                        <div className='subtitle subtitle-inline'>Base de données</div>
+                        <div>/</div>
+                        <div className="title title-inline">SQL & MongoDb</div>
+                    </div>
+                    <div className="bubble-skills">
+                        <div className="bubble-skill">C#</div>
+                        <div className="bubble-skill">.Net6</div>
+                        <div className="bubble-skill">MongoDb</div>
+                        <div className="bubble-skill">SQL</div>
+                        <div className="bubble-skill">Microservices</div>
+                    </div>
+                </div>
+            </div>
+                {/* <div className="skill">
                     <div className="skill-logo-container">
                         <FontAwesomeIcon className="skill-logo" icon={faDatabase} style={{ color: "#de6e3c" }}></FontAwesomeIcon>
                     </div>
@@ -25,9 +98,8 @@ export default function Skills() {
                         <FontAwesomeIcon className="skill-logo" icon={faDatabase} style={{ color: "#de6e3c" }}></FontAwesomeIcon>
                     </div>
                     <div className="skill-title">MongoDb</div>
-                </div>
-            </div>
-            <div className="skills-container">
+                </div> */}
+            {/* <div className="skills-container">
                 <div className="skill">
                     <div className="skill-logo-container">
                         <FontAwesomeIcon className="skill-logo" icon={faVuejs} style={{ color: "#64b687" }}></FontAwesomeIcon>
@@ -68,8 +140,8 @@ export default function Skills() {
                         <FontAwesomeIcon className="skill-logo" icon={faGit}></FontAwesomeIcon>
                     </div>
                     <div className="skill-title">Git</div>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </div >
     )
 }

@@ -1,39 +1,19 @@
 @import "../../styles/Functions.scss";
 @import "../../styles/Variables.scss";
 
-.skills-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: space(3);
-}
-
 .skill {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: space(3) 0;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container{
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 space(2);
-    background-color: $secondary-color;
-    border: 1px solid $primary-color;
-    padding: space(2);
-    border-radius: space(1);
-    min-width: 175px;
-}
-
-.skill-logo-container {
-    display: flex;
-    padding: space(1) 0;
-}
-
-.skill-title {
-    font-weight: 1000;
-}
-
-.skill-logo {
-    font-size: 25px;
-
-    :not(:last-child) {
-        margin: 0 space(1) 0 0;
-    }
 }

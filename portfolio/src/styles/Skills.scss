@@ -1,0 +1,17 @@
+@import "./Variables.scss";
+@import "./Functions.scss";
+
+
+.bubble-skills {
+    display: flex;
+    margin: space(1) 0 0 0;
+}
+
+.bubble-skill {
+    border-radius: space(1);
+    margin: 0 space(1) 0 0;
+    padding: space(0.5) space(1);
+    font-size: 12px;
+    color: $primary-color;
+    background-color: white;
+}

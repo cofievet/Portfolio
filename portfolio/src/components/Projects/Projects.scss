@@ -1,0 +1,45 @@
+@import "../../styles/Functions.scss";
+@import "../../styles/Variables.scss";
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    margin: 0 auto;
+  }
+  
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: space(3) 0;
+}
+
+.project-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-description{
+    text-align: justify;
+    margin: space(2) space(2) space(2) 0;
+}
+
+
+.project-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-link{
+    margin: 0 space(1) 0 0;
+    padding: space(0.5) space(1);
+    font-size: 20px;
+}
