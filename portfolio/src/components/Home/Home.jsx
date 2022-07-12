@@ -10,13 +10,13 @@ export default function Home() {
             <div className='home-title'>
                 <div>Corentin Fiévet</div>
                 <div>Ingénieur d'études Développeur .Net</div>
-                <div>CDiscount</div>
+                <div className='home-company'>CDiscount</div>
             </div>
 
-            <div>
-                <FontAwesomeIcon className='navbar-link navbar-link-logo' icon={faAt} />
-                <FontAwesomeIcon className='navbar-link navbar-link-logo' icon={faLinkedin} />
-                <FontAwesomeIcon className='navbar-link navbar-link-logo' icon={faGithub} />
+            <div className='logos-container'>
+                <FontAwesomeIcon className='link-logo' icon={faAt} />
+                <FontAwesomeIcon className='link-logo' icon={faLinkedin} />
+                <FontAwesomeIcon className='link-logo' icon={faGithub} />
             </div>
         </div>
     )

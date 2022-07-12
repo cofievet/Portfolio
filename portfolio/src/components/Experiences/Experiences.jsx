@@ -14,7 +14,7 @@ export default function Experiences() {
                     <div className="timeline">
                         <div className="timeline-number"></div>
                         <div className="timeline-info">
-                            <p className="title timeline-title">Ingénieur d’études Développeur backend .Net (C#)</p>
+                            <p className="timeline-title">Ingénieur d’études Développeur backend .Net (C#)</p>
                             <div className="timeline-company">
                                 <FontAwesomeIcon icon={faCrosshairs} className="location-logo"></FontAwesomeIcon>
                                 <span>CDiscount - CDI - Bordeaux</span>
@@ -43,7 +43,7 @@ export default function Experiences() {
                     <div className="timeline">
                         <div className="timeline-number"></div>
                         <div className="timeline-info">
-                            <p className="title timeline-title">Ingénieur d’études Développeur Fullstack .Net (C#) & VueJs</p>
+                            <p className="timeline-title">Ingénieur d’études Développeur Fullstack .Net (C#) & VueJs</p>
                             <div className="timeline-company">
                                 <FontAwesomeIcon icon={faCrosshairs} className="location-logo"></FontAwesomeIcon>
                                 <span>ALTEN - CDI - Sophia Antipolis</span>
@@ -65,7 +65,7 @@ export default function Experiences() {
                     <div className="timeline">
                         <div className="timeline-number"></div>
                         <div className="timeline-info">
-                            <p className="title timeline-title">Développeur informatique Développeur Fullstack .Net (C#) & Razor MVC</p>
+                            <p className="timeline-title">Développeur informatique Développeur Fullstack .Net (C#) & Razor MVC</p>
                             <div className="timeline-company">
                                 <FontAwesomeIcon icon={faCrosshairs} className="location-logo"></FontAwesomeIcon>
                                 <span>Axon Câble - CDD temps partiel - Reims</span>

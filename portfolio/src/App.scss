@@ -50,14 +50,6 @@
     font-family: $font-family;
 }
 
-// .title {
-//     font-size: space(3);
-//     font-weight: bold;
-//     font-family: $font-family;
-//     margin-bottom: space(3);
-//     color: $title-color;
-// }
-
 .flex {
     display: flex;
 }
@@ -69,5 +61,16 @@
 }
 
 .App {
-    background-color: $background-color;
+    background-color: $primary-color
+}
+
+.link-logo{
+    padding: space(3) space(1);
+    font-size: space(2.5);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logos-container{
+    color: $accenting-color;
 }

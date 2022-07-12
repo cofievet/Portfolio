@@ -13,13 +13,14 @@
     padding: space(1) space(1);
     margin: space(1);
     border-radius: space(2);
-    background-color: white;
+    background-color: $accenting-color;
     color: $primary-color;
-    border: 1px solid $primary-color;
+    border: 1px solid $secondary-color;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover{
         background-color:  $primary-color;
-        color: white;
+        color: $accenting-color;
     }
 }

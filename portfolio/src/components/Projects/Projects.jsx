@@ -1,8 +1,5 @@
 import './Projects.scss'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLine, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
 export default function Projects() {
     return (
         <div id="projects" className="container">
@@ -29,8 +26,8 @@ export default function Projects() {
                             Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.
                         </div>
                         <div className='buttons-container'>
-                            <a className='button'>GitHub</a>
-                            <a className='button'>Website</a>
+                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>GitHub</a>
+                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>Website</a>
                         </div>
                     </div>
 

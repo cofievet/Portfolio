@@ -1,10 +1,15 @@
 $font-family: 'Montserrat', sans-serif;
 
-$title-color: #161515;
+$primary-color: #FFFFFA;
+$secondary-color: #000103;
+$accenting-color: #0E79B2;
+
+// $primary-color: #fdd140;
+// $secondary-color: #000000;
+// $accenting-color: #ffffff;
+
+$title-color: $secondary-color;
 $second-title-color: rgba(0, 0, 0, 0.7);
 
-$subtitle-color: #5F5E5E;
-$background-color: #f3f4f6;
-$primary-color: #0ea5e9;
-$secondary-color: #F2F2F2;
-$text-color: #161515;
+$subtitle-color: $accenting-color;
+$text-color: $secondary-color;

@@ -4,6 +4,7 @@
 .about-paragraph {
     text-align: justify;
     margin: space(2) 0;
+    color: $secondary-color;
 }
 
 .about-skills-container {
@@ -26,7 +27,8 @@
     margin: space(1) space(1);
     padding: space(1);
     font-weight: 600;
-    background-color: white;
+    background-color: $accenting-color;
+    color: $primary-color;
 }
 
 // .skill-title {

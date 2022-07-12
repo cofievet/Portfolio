@@ -10,16 +10,21 @@
 .home-title {
     font-size: space(5);
     font-family: $font-family;
+    color: $secondary-color;
 }
 
 .home-subtitle{
     font-family: $font-family;
     font-size: space(2);
-    color: $subtitle-color;
+    color: $secondary-color;
     margin: space(1);
 }
 
 .home-subtitle-body{
     font-family: $font-family;
     margin: space(1);
+}
+
+.home-company{
+    color: $secondary-color;
 }
