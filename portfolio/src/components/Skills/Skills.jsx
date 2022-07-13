@@ -3,7 +3,7 @@ import './Skills.scss'
 export default function Skills() {
     return (
         <div id="skills" className="container">
-            <div className="title">Skills</div>
+            <div className="title">Compétences</div>
             <div className="skills-container">
                 <div className="skill">
                     <div className='header-inline'>

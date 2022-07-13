@@ -5,7 +5,7 @@ import "./Studies.scss"
 export default function Studies() {
     return (<div id="studies" className="container">
         <div className="title">
-            Studies
+            Etudes
         </div>
 
         <div className="timeline-container">

@@ -11,6 +11,7 @@
     font-size: space(5);
     font-family: $font-family;
     color: $secondary-color;
+    flex: 1;
 }
 
 .home-subtitle{
@@ -27,4 +28,15 @@
 
 .home-company{
     color: $secondary-color;
+}
+
+.home-presentation{
+    display: flex;
+    align-items: center;
+}
+
+.home-picture{
+    flex: 10px;
+    margin: space(3);
+    border-radius: 10px;
 }

@@ -57,7 +57,9 @@
 .citation {
     color: $subtitle-color;
     margin: space(3) 0;
-    font-weight: 600;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
 }
 
 .App {

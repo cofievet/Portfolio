@@ -4,29 +4,67 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: calc(100% - space(4));
     position: fixed;
     z-index: 3;
     background-color: $primary-color;
     top: 0;
     border-bottom: 1px solid $secondary-color;
+    margin: 0 space(2);
+}
+
+.navbar-header {
+    font-family: $font-family;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.navbar-name {
+    font-size: 25px;
+    color: $accenting-color;
+}
+
+.navbar-job {
+    font-size: 20px;
+    margin-left: space(1);
+    color: $secondary-color;
 }
 
 .navbar-links-text {
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .navbar-link-text {
-    padding: space(3) space(2);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: space(1);
 }
 
 .navbar-link {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     color: $secondary-color;
-    font-size: space(2.5);
-    font-weight: 600;
+    text-decoration: none;
+    padding: space(2) space(1);
+    margin: space(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    min-width: 100px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $accenting-color;
+        color: $primary-color;
+    }
+}
+
+.navbar-logo {
+    font-size: 25px;
 }
