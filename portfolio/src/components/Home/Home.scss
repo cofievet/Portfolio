@@ -40,3 +40,12 @@
     margin: space(3);
     border-radius: 10px;
 }
+
+.home-logo{
+    padding: space(3) space(1);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $accenting-color;
+    cursor: pointer;
+}

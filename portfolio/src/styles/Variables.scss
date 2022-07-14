@@ -3,10 +3,53 @@ $font-family: 'Montserrat', sans-serif;
 $primary-color: #FFFFFD;
 $secondary-color: #000103;
 $accenting-color: #7EA172;
-//$accenting-color : #2364AA;
 
 $title-color: $secondary-color;
 $second-title-color: #A7A7A7;
 
 $subtitle-color: $accenting-color;
 $text-color: $secondary-color;
+
+$font-size: 15px;
+$font-size-mobile: 10px;
+
+$font-size-title: 15px;
+$font-size-title-mobile: 10px;
+
+$font-size-subtitle: 15px;
+$font-size-subtitle-mobile: 10px;
+
+$logo-size: 25px;
+$logo-size-mobile: 20px;
+
+$mobile-max-width: 480px;
+
+@mixin logo-size {
+    height: $logo-size;
+    width: $logo-size;
+    @media all and (max-width: $mobile-max-width) {
+        height: $logo-size-mobile;
+        width: $logo-size-mobile;
+    }
+}
+
+@mixin font-size-title() {
+    font-size: $font-size-title;
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-title-mobile;
+    }
+}
+
+@mixin font-size-subtitle() {
+    font-size: $font-size-subtitle;
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-subtitle-mobile;
+    }
+}
+
+@mixin font-size-text() {
+    font-size: $font-size;
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-mobile;
+    }
+}

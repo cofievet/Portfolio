@@ -13,9 +13,15 @@ export default function Home() {
                     <div>Ingénieur d'études Développeur .Net</div>
                     <div className='home-company'>CDiscount</div>
                     <div className='logos-container'>
-                        <FontAwesomeIcon className='link-logo' icon={faAt} />
-                        <FontAwesomeIcon className='link-logo' icon={faLinkedin} />
-                        <FontAwesomeIcon className='link-logo' icon={faGithub} />
+                        <a href='mailto:cofievet@gmail.com' className='home-logo' >
+                            <FontAwesomeIcon icon={faAt} />
+                        </a>
+                        <a href='https://www.linkedin.com/in/corentin-fievet/' target="_blank" rel="noreferrer" className='home-logo' >
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                        <a href='https://github.com/cofievet' target="_blank" rel="noreferrer" className='home-logo' >
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
                     </div>
                 </div>
             </div>

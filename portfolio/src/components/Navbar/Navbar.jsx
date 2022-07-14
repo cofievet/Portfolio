@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 
 export default function Navbar() {
 
-    let offset = -108
+    let offset = -100
 
     return (
         <div className='navbar'>

@@ -12,7 +12,7 @@ export default function About() {
                 <div className="about-paragraph">
                     Depuis maintenant plusieurs années, j'ai eu la chance de travailler sur plusieurs projets dans des secteurs variés.
                     Axon Câble avec la santé au travail, Orange avec le commerce et maintenant CDiscount avec le secteur du E-commerce et un site grand public.
-                    Qu'elles soit professionnelles ou personnelles, j'essaie toujours de tirer le maximum des expériences afin de comprendre et d'apprendre de ces opportunités.
+                    Qu'elles soient professionnelles ou personnelles, j'essaie toujours de tirer le maximum des expériences afin de comprendre et d'apprendre de ces opportunités.
                 </div>
 
                 <div className="about-paragraph">

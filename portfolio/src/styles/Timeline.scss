@@ -29,7 +29,7 @@
     top: space(4);
     height: 0;
     width: 2px;
-    background-color: $secondary-color;
+    background-color: $accenting-color;
   }
 
   .timeline-info {
@@ -40,12 +40,15 @@
   .timeline-company {
     font-size: 15px;
     color: $secondary-color;
-  }
-
-  .timeline-company {
     margin: 0;
     display: flex;
     align-items: center;
+  }
+
+  .location-logo {
+    margin-right: space(1);
+    height: 15px;
+    width: 15px;
   }
 
   .timeline-duration {
@@ -71,16 +74,15 @@
     &:after {
       height: calc(100% - space(4));
     }
-
   }
 }
 
 .timeline-number {
   width: 32px;
   height: 32px;
-  background-color: $primary-color;
+  background-color: $accenting-color;
   border-radius: 50%;
-  border: 2px solid $secondary-color;
+  border: 2px solid $accenting-color;
   flex-shrink: 0;
   display: flex;
   justify-content: center;

@@ -1,9 +1,11 @@
 @import "../../styles/Functions.scss";
 @import "../../styles/Variables.scss";
+@import "../../styles/Animations.scss";
 
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: calc(100% - space(4));
     position: fixed;
     z-index: 3;
@@ -11,6 +13,8 @@
     top: 0;
     border-bottom: 1px solid $secondary-color;
     margin: 0 space(2);
+    height: 100px;
+    max-height: 100px;
 }
 
 .navbar-header {
@@ -22,12 +26,12 @@
 }
 
 .navbar-name {
-    font-size: 25px;
     color: $accenting-color;
+    @include font-size-title;
 }
 
 .navbar-job {
-    font-size: 20px;
+    @include font-size-subtitle;
     margin-left: space(1);
     color: $secondary-color;
 }
@@ -42,29 +46,43 @@
 .navbar-link-text {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
     padding: space(1);
+    @include font-size-text;
 }
 
 .navbar-link {
     color: $secondary-color;
     text-decoration: none;
     padding: space(2) space(1);
-    margin: space(1);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
-    min-width: 100px;
     border-radius: 5px;
 
     &:hover {
         background-color: $accenting-color;
         color: $primary-color;
+        animation: bounce 0.5s 1 alternate ease-out forwards;
     }
 }
 
 .navbar-logo {
-    font-size: 25px;
+    @include logo-size;
+}
+
+@media all and (max-width: 480px) {
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar-link {
+        min-width: none;
+        &:hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+            animation: none;
+        }
+    }
 }
