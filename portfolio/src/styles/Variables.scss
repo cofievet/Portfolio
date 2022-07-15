@@ -1,8 +1,12 @@
 $font-family: 'Montserrat', sans-serif;
 
-$primary-color: #FFFFFD;
-$secondary-color: #000103;
-$accenting-color: #7EA172;
+// $primary-color: #FFFFFD;
+// $secondary-color: #000103;
+// $accenting-color: #7EA172;
+
+$primary-color: #FFFFFF;
+$secondary-color: #39393A;
+$accenting-color: #6D82C5;
 
 $title-color: $secondary-color;
 $second-title-color: #A7A7A7;
@@ -13,11 +17,20 @@ $text-color: $secondary-color;
 $font-size: 15px;
 $font-size-mobile: 10px;
 
-$font-size-title: 15px;
-$font-size-title-mobile: 10px;
+$font-size-title-h1: 40px;
+$font-size-title-h1-mobile: 30px;
+
+$font-size-title-h2: 25px;
+$font-size-title-h2-mobile: 20px;
+
+$font-size-title-h3: 20px;
+$font-size-title-h3-mobile: 15px;
 
 $font-size-subtitle: 15px;
-$font-size-subtitle-mobile: 10px;
+$font-size-subtitle-mobile: 13px;
+
+$font-size-text: 14px;
+$font-size-text-mobile: 12px;
 
 $logo-size: 25px;
 $logo-size-mobile: 20px;
@@ -27,29 +40,60 @@ $mobile-max-width: 480px;
 @mixin logo-size {
     height: $logo-size;
     width: $logo-size;
+    font-size: $logo-size;
+
     @media all and (max-width: $mobile-max-width) {
         height: $logo-size-mobile;
         width: $logo-size-mobile;
+        font-size: $logo-size-mobile;
     }
 }
 
-@mixin font-size-title() {
-    font-size: $font-size-title;
+@mixin font-size-title-h1() {
+    font-size: $font-size-title-h1;
+
     @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-title-mobile;
+        font-size: $font-size-title-h1-mobile;
     }
 }
+
+@mixin font-size-title-h2() {
+    font-size: $font-size-title-h2;
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-title-h2-mobile;
+    }
+}
+
+@mixin font-size-title-h3() {
+    font-size: $font-size-title-h3;
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-title-h3-mobile;
+    }
+}
+
 
 @mixin font-size-subtitle() {
     font-size: $font-size-subtitle;
+
     @media all and (max-width: $mobile-max-width) {
         font-size: $font-size-subtitle-mobile;
     }
 }
 
-@mixin font-size-text() {
+@mixin font-size-navbar() {
     font-size: $font-size;
+
     @media all and (max-width: $mobile-max-width) {
         font-size: $font-size-mobile;
+    }
+}
+
+@mixin font-size-text() {
+    font-size: $font-size-text;
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-text-mobile;
     }
 }

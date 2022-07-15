@@ -5,7 +5,7 @@ export default function About() {
         <div id="about" className="container">
             <div className="title">A propos de moi</div>
             <div className="about">
-                <div className="citation">
+                <div className="about-citation">
                     <div>“Je crois que l’on apprend et que l’on progresse sans arrêt. Nous sommes sans cesse mis à l’épreuve." Ayrton Senna</div>
                 </div>
 
@@ -26,7 +26,7 @@ export default function About() {
                     Les nouveaux défis sont pour moi une source de motivation.
                 </div>
 
-                <div>Grâce à ces différentes expériences, j'ai pu développer des compétences techniques et fonctionnelles :
+                <div className="about-paragraph">Grâce à ces différentes expériences, j'ai pu développer des compétences techniques et fonctionnelles :
                     <div className="about-skills-container">
                         <div className="about-skills-list">
                             <div className="about-skill">Développement backend</div>

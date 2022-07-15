@@ -5,6 +5,8 @@
     text-align: justify;
     margin: space(2) 0;
     color: $secondary-color;
+
+    @include font-size-text;
 }
 
 .about-skills-container {
@@ -18,13 +20,27 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .about-skill {
     border-radius: space(1);
-    margin: space(1) space(1);
+    margin: space(1);
     padding: space(1);
     background-color: $accenting-color;
     color: $primary-color;
+
+    @media all and (max-width: 480px) {
+        margin: space(0.5);        
+    }
+    
+    @include font-size-text;
+}
+
+.about-citation {
+    color: $subtitle-color;
+    margin: space(3) 0;
+    font-weight: bold;
+    text-align: center;
+    
+    @include font-size-title-h3;
 }

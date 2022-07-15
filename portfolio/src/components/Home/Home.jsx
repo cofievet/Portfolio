@@ -13,14 +13,14 @@ export default function Home() {
                     <div>Ingénieur d'études Développeur .Net</div>
                     <div className='home-company'>CDiscount</div>
                     <div className='logos-container'>
-                        <a href='mailto:cofievet@gmail.com' className='home-logo' >
-                            <FontAwesomeIcon icon={faAt} />
+                        <a href='mailto:cofievet@gmail.com' className='home-logo-link' >
+                            <FontAwesomeIcon icon={faAt} className="home-logo" />
                         </a>
-                        <a href='https://www.linkedin.com/in/corentin-fievet/' target="_blank" rel="noreferrer" className='home-logo' >
-                            <FontAwesomeIcon icon={faLinkedin} />
+                        <a href='https://www.linkedin.com/in/corentin-fievet/' target="_blank" rel="noreferrer" className='home-logo-link' >
+                            <FontAwesomeIcon icon={faLinkedin} className="home-logo" />
                         </a>
-                        <a href='https://github.com/cofievet' target="_blank" rel="noreferrer" className='home-logo' >
-                            <FontAwesomeIcon icon={faGithub} />
+                        <a href='https://github.com/cofievet' target="_blank" rel="noreferrer" className='home-logo-link' >
+                            <FontAwesomeIcon icon={faGithub} className="home-logo" />
                         </a>
                     </div>
                 </div>

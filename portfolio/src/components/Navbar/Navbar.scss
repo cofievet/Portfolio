@@ -27,11 +27,11 @@
 
 .navbar-name {
     color: $accenting-color;
-    @include font-size-title;
+    @include font-size-title-h2;
 }
 
 .navbar-job {
-    @include font-size-subtitle;
+    @include font-size-title-h3;
     margin-left: space(1);
     color: $secondary-color;
 }
@@ -41,6 +41,7 @@
     align-items: center;
     justify-content: flex-end;
     flex: 1;
+    width: 100%;
 }
 
 .navbar-link-text {
@@ -61,10 +62,12 @@
     cursor: pointer;
     border-radius: 5px;
 
-    &:hover {
-        background-color: $accenting-color;
-        color: $primary-color;
-        animation: bounce 0.5s 1 alternate ease-out forwards;
+    @media (hover: hover) {
+        &:hover {
+            background-color: $accenting-color;
+            color: $primary-color;
+            animation: bounce 0.5s 1 alternate ease-out forwards;
+        }
     }
 }
 
@@ -78,11 +81,10 @@
     }
 
     .navbar-link {
-        min-width: none;
-        &:hover {
-            background-color: $primary-color;
-            color: $secondary-color;
-            animation: none;
-        }
+        min-width: 0;
+    }
+
+    .navbar-links-text {
+        justify-content: center;
     }
 }

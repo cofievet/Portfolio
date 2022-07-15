@@ -1,7 +1,6 @@
 @import "./Functions.scss";
 @import "./Variables.scss";
 
-
 *,
 *:before,
 *:after {
@@ -22,23 +21,13 @@
   display: flex;
   position: relative;
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: calc(space(2) - 2px);
-    top: space(4);
-    height: 0;
-    width: 2px;
-    background-color: $accenting-color;
-  }
-
   .timeline-info {
     margin: space(1) 0 space(3);
   }
 
   .timeline-duration,
   .timeline-company {
-    font-size: 15px;
+    @include font-size-subtitle;
     color: $secondary-color;
     margin: 0;
     display: flex;
@@ -59,12 +48,13 @@
     margin: 0 0 space(1);
     color: $secondary-color;
     font-weight: 600;
-    font-size: 18px;
     text-transform: uppercase;
+
+    @include font-size-title-h3;
   }
 
   .timeline-text {
-    font-size: 14px;
+    @include font-size-text;
     color: $secondary-color;
     padding-bottom: 0;
     margin: 0;
@@ -75,25 +65,37 @@
       height: calc(100% - space(4));
     }
   }
-}
 
-.timeline-number {
-  width: 32px;
-  height: 32px;
-  background-color: $accenting-color;
-  border-radius: 50%;
-  border: 2px solid $accenting-color;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 15px;
-  font-weight: 600;
-  margin-right: 14px;
+  @media all and (min-width: 480px) {
+    &:after {
+      content: "";
+      position: absolute;
+      left: calc(space(2) - 2px);
+      top: space(4);
+      height: 0;
+      width: 2px;
+      background-color: $accenting-color;
+    }
 
-  &.completed {
-    background-color: $subtitle-color;
-    ;
+    .timeline-number {
+      width: 32px;
+      height: 32px;
+      background-color: $accenting-color;
+      border-radius: 50%;
+      border: 2px solid $accenting-color;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
+      margin-right: 14px;
+
+      &.completed {
+        background-color: $subtitle-color;
+        ;
+      }
+    }
   }
 }
