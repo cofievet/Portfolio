@@ -6,7 +6,7 @@
     margin: space(2) 0;
     color: $secondary-color;
 
-    @include font-size-text;
+    @include font-size-default;
 }
 
 .about-skills-container {
@@ -33,7 +33,7 @@
         margin: space(0.5);        
     }
     
-    @include font-size-text;
+    @include font-size-default;
 }
 
 .about-citation {
@@ -42,5 +42,5 @@
     font-weight: bold;
     text-align: center;
     
-    @include font-size-title-h3;
+    @include font-size-tertiary;
 }

@@ -11,9 +11,9 @@ export default function Projects() {
                 <div className="projects">
                     <div className="project">
                         <div className='header-inline'>
-                            <div className='subtitle subtitle-inline'>Web Application</div>
+                            <div className='project-subtitle subtitle-inline'>Web Application</div>
                             <div>/</div>
-                            <div className="title title-inline">GForce Racing</div>
+                            <div className="project-title title-inline">GForce Racing</div>
                         </div>
                         <div className="bubble-skills">
                             <div className="bubble-skill">C#</div>
@@ -33,9 +33,9 @@ export default function Projects() {
 
                     <div className="project">
                         <div className='header-inline'>
-                            <div className='subtitle subtitle-inline'>Chrome extension</div>
+                            <div className='project-subtitle subtitle-inline'>Chrome extension</div>
                             <div>/</div>
-                            <div className="title title-inline">Tab Manager</div>
+                            <div className="project-title title-inline">Tab Manager</div>
                         </div>
                         <div className="bubble-skills">
                             <div className="bubble-skill">Javascript</div>

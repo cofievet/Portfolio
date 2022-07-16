@@ -1,12 +1,26 @@
+$mobile-max-width: 480px;
+$tablet-min-width: 481px;
+$tablet-max-width: 768px;
+$laptops-min-width: 769px;
+$laptops-max-width: 1024px;
+$desktops-min-width: 1025px;
+
+$font-size-default-desktop: 18px;
+$font-size-default-tablet: 16px;
+$font-size-default-mobile: 14px;
+
+$ratio-h1: 1.33; // *
+$ratio-h2: 1.25; // *
+$ratio-secondary: 2px; // -
+$ratio-tertiary: 1px; // +
+
+$logo-size: 25px;
+
 $font-family: 'Montserrat', sans-serif;
 
-// $primary-color: #FFFFFD;
-// $secondary-color: #000103;
-// $accenting-color: #7EA172;
-
-$primary-color: #FFFFFF;
-$secondary-color: #39393A;
-$accenting-color: #6D82C5;
+$primary-color: #FFFFFD;
+$secondary-color: #000103;
+$accenting-color: #7EA172;
 
 $title-color: $secondary-color;
 $second-title-color: #A7A7A7;
@@ -14,28 +28,65 @@ $second-title-color: #A7A7A7;
 $subtitle-color: $accenting-color;
 $text-color: $secondary-color;
 
-$font-size: 15px;
-$font-size-mobile: 10px;
+@mixin font-size-h1() {
+    font-size: $font-size-default-desktop * $ratio-h1;
 
-$font-size-title-h1: 40px;
-$font-size-title-h1-mobile: 30px;
+    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        font-size: $font-size-default-tablet * $ratio-h1;
+    }
 
-$font-size-title-h2: 25px;
-$font-size-title-h2-mobile: 20px;
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-default-mobile * $ratio-h1;
+    }
+}
 
-$font-size-title-h3: 20px;
-$font-size-title-h3-mobile: 15px;
+@mixin font-size-h2() {
+    font-size: $font-size-default-desktop * $ratio-h2;
 
-$font-size-subtitle: 15px;
-$font-size-subtitle-mobile: 13px;
+    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        font-size: $font-size-default-tablet * $ratio-h2;
+    }
 
-$font-size-text: 14px;
-$font-size-text-mobile: 12px;
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-default-mobile * $ratio-h2;
+    }
+}
 
-$logo-size: 25px;
-$logo-size-mobile: 20px;
+@mixin font-size-default() {
+    font-size: $font-size-default-desktop;
 
-$mobile-max-width: 480px;
+    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        font-size: $font-size-default-tablet;
+    }
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-default-mobile;
+    }
+}
+
+@mixin font-size-secondary() {
+    font-size: $font-size-default-desktop - $ratio-secondary;
+
+    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        font-size: $font-size-default-tablet - $ratio-secondary;
+    }
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-default-mobile - $ratio-secondary;
+    }
+}
+
+@mixin font-size-tertiary() {
+    font-size: $font-size-default-desktop + $ratio-tertiary;
+
+    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        font-size: $font-size-default-tablet + $ratio-tertiary;
+    }
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-default-mobile + $ratio-tertiary;
+    }
+}
 
 @mixin logo-size {
     height: $logo-size;
@@ -43,57 +94,6 @@ $mobile-max-width: 480px;
     font-size: $logo-size;
 
     @media all and (max-width: $mobile-max-width) {
-        height: $logo-size-mobile;
-        width: $logo-size-mobile;
-        font-size: $logo-size-mobile;
-    }
-}
-
-@mixin font-size-title-h1() {
-    font-size: $font-size-title-h1;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-title-h1-mobile;
-    }
-}
-
-@mixin font-size-title-h2() {
-    font-size: $font-size-title-h2;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-title-h2-mobile;
-    }
-}
-
-@mixin font-size-title-h3() {
-    font-size: $font-size-title-h3;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-title-h3-mobile;
-    }
-}
-
-
-@mixin font-size-subtitle() {
-    font-size: $font-size-subtitle;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-subtitle-mobile;
-    }
-}
-
-@mixin font-size-navbar() {
-    font-size: $font-size;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-mobile;
-    }
-}
-
-@mixin font-size-text() {
-    font-size: $font-size-text;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-text-mobile;
+        font-size: font-size('mobile', $logo-size);
     }
 }

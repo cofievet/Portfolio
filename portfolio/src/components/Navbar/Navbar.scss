@@ -27,11 +27,11 @@
 
 .navbar-name {
     color: $accenting-color;
-    @include font-size-title-h2;
+    @include font-size-default;
 }
 
 .navbar-job {
-    @include font-size-title-h3;
+    @include font-size-default;
     margin-left: space(1);
     color: $secondary-color;
 }
@@ -48,7 +48,7 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: space(1);
-    @include font-size-text;
+    @include font-size-default;
 }
 
 .navbar-link {

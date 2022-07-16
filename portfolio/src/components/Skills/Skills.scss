@@ -16,3 +16,17 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.skill-title{
+    font-weight: 600;
+    color: $secondary-color;
+    text-align: center;
+    
+    @include font-size-h2;
+}
+
+.skill-subtitle{
+    color: $second-title-color;
+
+    @include font-size-tertiary;
+}

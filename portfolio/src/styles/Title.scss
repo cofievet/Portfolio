@@ -3,10 +3,11 @@
 
 .title {
     font-weight: 600;
-    font-size: 25px;
     color: $secondary-color;
     text-align: center;
     margin-bottom: space(3);
+
+    @include font-size-h1;
 }
 
 .title-inline {

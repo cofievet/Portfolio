@@ -7,9 +7,9 @@ export default function Skills() {
             <div className="skills-container">
                 <div className="skill">
                     <div className='header-inline'>
-                        <div className='subtitle subtitle-inline'>Backend</div>
+                        <div className='skill-subtitle subtitle-inline'>Backend</div>
                         <div>/</div>
-                        <div className="title-inline">C#</div>
+                        <div className="skill-title title-inline">C#</div>
                     </div>
                     <div className="bubble-skills">
                         <div className="bubble-skill">C#</div>
@@ -19,9 +19,9 @@ export default function Skills() {
                 </div>
                 <div className="skill">
                     <div className='header-inline'>
-                        <div className='subtitle subtitle-inline'>Frontend</div>
+                        <div className='skill-subtitle subtitle-inline'>Backend</div>
                         <div>/</div>
-                        <div className="title-inline">Framework javascript</div>
+                        <div className="skill-title title-inline">C#</div>
                     </div>
                     <div className="bubble-skills">
                         <div className="bubble-skill">VueJs</div>
@@ -30,9 +30,9 @@ export default function Skills() {
                 </div>
                 <div className="skill">
                     <div className='header-inline'>
-                        <div className='subtitle subtitle-inline'>Base de données</div>
+                        <div className='skill-subtitle subtitle-inline'>Backend</div>
                         <div>/</div>
-                        <div className="title-inline">SQL & MongoDb</div>
+                        <div className="skill-title title-inline">C#</div>
                     </div>
                     <div className="bubble-skills">
                         <div className="bubble-skill">C#</div>
@@ -46,9 +46,9 @@ export default function Skills() {
             <div className="skills-container">
                 <div className="skill">
                     <div className='header-inline'>
-                        <div className='subtitle subtitle-inline'>Backend</div>
+                        <div className='skill-subtitle subtitle-inline'>Backend</div>
                         <div>/</div>
-                        <div className="title-inline">C#</div>
+                        <div className="skill-title title-inline">C#</div>
                     </div>
                     <div className="bubble-skills">
                         <div className="bubble-skill">C#</div>
@@ -60,9 +60,9 @@ export default function Skills() {
                 </div>
                 <div className="skill">
                     <div className='header-inline'>
-                        <div className='subtitle subtitle-inline'>Frontend</div>
+                        <div className='skill-subtitle subtitle-inline'>Backend</div>
                         <div>/</div>
-                        <div className="title-inline">Framework javascript</div>
+                        <div className="skill-title title-inline">C#</div>
                     </div>
                     <div className="bubble-skills">
                         <div className="bubble-skill">VueJs</div>
@@ -71,9 +71,9 @@ export default function Skills() {
                 </div>
                 <div className="skill">
                     <div className='header-inline'>
-                        <div className='subtitle subtitle-inline'>Base de données</div>
+                        <div className='skill-subtitle subtitle-inline'>Backend</div>
                         <div>/</div>
-                        <div className="title-inline">SQL & MongoDb</div>
+                        <div className="skill-title title-inline">C#</div>
                     </div>
                     <div className="bubble-skills">
                         <div className="bubble-skill">C#</div>

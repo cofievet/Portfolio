@@ -27,7 +27,7 @@
 
   .timeline-duration,
   .timeline-company {
-    @include font-size-subtitle;
+    @include font-size-secondary;
     color: $secondary-color;
     margin: 0;
     display: flex;
@@ -50,11 +50,11 @@
     font-weight: 600;
     text-transform: uppercase;
 
-    @include font-size-title-h3;
+    @include font-size-h2;
   }
 
   .timeline-text {
-    @include font-size-text;
+    @include font-size-default;
     color: $secondary-color;
     padding-bottom: 0;
     margin: 0;

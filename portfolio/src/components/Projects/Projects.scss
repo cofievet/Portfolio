@@ -30,6 +30,8 @@
     text-align: justify;
     margin: space(2) space(2) space(2) 0;
     color: $secondary-color;
+
+    @include font-size-default;
 }
 
 
@@ -43,4 +45,18 @@
     margin: 0 space(1) 0 0;
     padding: space(0.5) space(1);
     font-size: 20px;
+}
+
+.project-title{
+    font-weight: 600;
+    color: $secondary-color;
+    text-align: center;
+    
+    @include font-size-h2;
+}
+
+.project-subtitle{
+    color: $second-title-color;
+
+    @include font-size-tertiary;
 }
