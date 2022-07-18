@@ -40,8 +40,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex: 1;
-    width: 100%;
+    width: 30%;
+
+    @media all and (max-width: $mobile-max-width) {
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 .navbar-link-text {
@@ -65,6 +69,7 @@
     flex-direction: column;
     cursor: pointer;
     border-radius: 5px;
+    flex: 1;
 
     @media (hover: hover) {
         &:hover {
@@ -91,7 +96,7 @@
         padding: space(1);
     }
 
-    .navbar-name{
+    .navbar-name {
         color: $secondary-color;
     }
 
@@ -100,7 +105,4 @@
         padding-top: space(0.5);
     }
 
-    .navbar-links-text {
-        justify-content: center;
-    }
 }

@@ -9,7 +9,7 @@ export default function Experiences() {
                 <div className="title-logo" >
                     <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>
                 </div>
-                <span className="title">Experiences</span>
+                <span className="title">CV</span>
             </div>
 
             <div className="timeline-container">

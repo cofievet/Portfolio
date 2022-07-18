@@ -29,11 +29,12 @@
     background-color: $accenting-color;
     color: $primary-color;
 
-    @media all and (max-width: 480px) {
+    @media all and (max-width: $mobile-max-width) {
         margin: space(0.5);        
+        padding: space(0.5);
     }
     
-    @include font-size-default;
+    @include font-size-secondary;
 }
 
 .about-citation {

@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faAt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Contact.scss'
 
@@ -19,6 +19,12 @@ export default function Contact() {
             </div>
 
             <div className="contact-links">
+                <div className='contact-link'>
+                    <FontAwesomeIcon className='contact-logo' icon={faAt}></FontAwesomeIcon>
+                    <div className='contact-link-text'>
+                        <span>:</span>
+                        <a className='contact-link-text-a' href='mailto:cofievet@gmail.com'>cofievet@gmail.com</a></div>
+                </div>
                 <div className='contact-link'>
                     <FontAwesomeIcon className='contact-logo' icon={faLinkedin}></FontAwesomeIcon>
                     <div className='contact-link-text'>

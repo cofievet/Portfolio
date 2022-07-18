@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="navbar-links-text">
                 <Link activeClass='active' to="experiences" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faBriefcase} className="navbar-logo"></FontAwesomeIcon>
-                    <span className='navbar-link-text'>Experiences</span>
+                    <span className='navbar-link-text'>CV</span>
                 </Link>
                 <Link activeClass='active' to="skills" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faBook} className="navbar-logo"></FontAwesomeIcon>
