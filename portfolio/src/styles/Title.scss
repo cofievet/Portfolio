@@ -1,13 +1,24 @@
 @import "./Variables.scss";
 @import "./Functions.scss";
 
-.title {
-    font-weight: 600;
+.title-container {
     color: $secondary-color;
-    text-align: center;
     margin-bottom: space(3);
-
+    display: flex;
+    align-content: center;
+    justify-content: center;
     @include font-size-h1;
+    font-weight: 600;
+}
+
+.title-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    padding: space(0) space(1);
 }
 
 .title-inline {
@@ -25,7 +36,7 @@
     font-weight: 600;
 }
 
-.header-inline{
+.header-inline {
     display: flex;
     align-items: center;
     justify-content: center;

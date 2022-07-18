@@ -1,12 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDays, faLocationDot } from "@fortawesome/free-solid-svg-icons"
+import { faBriefcase, faCalendarDays, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import "./Experiences.scss";
 
 export default function Experiences() {
     return (
         <div id="experiences" className="container">
-            <div className="title">
-                Experiences
+            <div className="title-container">
+                <div className="title-logo" >
+                    <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>
+                </div>
+                <span className="title">Experiences</span>
             </div>
 
             <div className="timeline-container">
@@ -25,8 +28,8 @@ export default function Experiences() {
                             </div>
                             <div className="timeline-text">
                                 <p>Intégration à l'équipe de développement en tant que développeur Backend dans l'équipe OPECO.<br />
-                                L'équipe permet le mise en place des opérations commerciales et la gestion des soldes et black friday<br />
-                                Les différents éléments de travail peuvent aller :</p>
+                                    L'équipe permet le mise en place des opérations commerciales et la gestion des soldes et black friday<br />
+                                    Les différents éléments de travail peuvent aller :</p>
                                 <ul>
                                     <li>Mise en place de nouvelles fonctionnalités (exemple : création de nouvelles opérations commerciales)</li>
                                     <li>Correction de bugs sur les assets existants</li>

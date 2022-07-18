@@ -1,9 +1,16 @@
+import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Skills.scss'
 
 export default function Skills() {
     return (
         <div id="skills" className="container">
-            <div className="title">Compétences</div>
+            <div className="title-container">
+                <div className="title-logo" >
+                    <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
+                </div>
+                <span className="title">Compétences</span>
+            </div>
             <div className="skills-container">
                 <div className="skill">
                     <div className='header-inline'>
@@ -84,7 +91,7 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-                {/* <div className="skill">
+            {/* <div className="skill">
                     <div className="skill-logo-container">
                         <FontAwesomeIcon className="skill-logo" icon={faDatabase} style={{ color: "#de6e3c" }}></FontAwesomeIcon>
                     </div>

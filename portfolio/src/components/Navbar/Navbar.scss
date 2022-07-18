@@ -48,7 +48,11 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: space(1);
-    @include font-size-default;
+    font-size: $font-size-default-desktop;
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: 11px;
+    }
 }
 
 .navbar-link {
@@ -75,13 +79,25 @@
     @include logo-size;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: $mobile-max-width) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .navbar-header {
-        display: none;
+        padding: space(1);
+    }
+
+    .navbar-name{
+        color: $secondary-color;
     }
 
     .navbar-link {
         min-width: 0;
+        padding-top: space(0.5);
     }
 
     .navbar-links-text {

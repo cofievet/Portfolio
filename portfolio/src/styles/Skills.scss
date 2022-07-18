@@ -5,11 +5,12 @@
 .bubble-skills {
     display: flex;
     margin: space(1) 0 0 0;
+    flex-wrap: wrap;
 }
 
 .bubble-skill {
     border-radius: space(1);
-    margin: 0 space(1) 0 0;
+    margin: space(1) space(1) 0 0;
     padding: space(0.5) space(1);
     font-size: 12px;
     color: $primary-color;

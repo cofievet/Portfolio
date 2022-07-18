@@ -1,0 +1,43 @@
+@import "../../styles/Variables.scss";
+@import "../../styles/Functions.scss";
+
+.contact-container {
+    margin-bottom: space(5);
+}
+
+.contact-informations {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: space(2) 0;
+    font-weight: bold;
+
+    @include font-size-default;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-logo {
+    @include logo-size;
+}
+
+.contact-link-text{
+    @include font-size-default;
+    padding: 0 space(0.5);
+}
+
+.contact-link-text-a{
+    text-decoration: none;
+    color: $accenting-color;
+    font-weight: bold;
+    padding: 0 space(0.5);
+
+    &:hover{
+        color: $secondary-color;
+    }
+}

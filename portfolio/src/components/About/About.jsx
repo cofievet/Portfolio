@@ -1,9 +1,16 @@
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./About.scss";
 
 export default function About() {
     return (
         <div id="about" className="container">
-            <div className="title">A propos de moi</div>
+            <div className="title-container">
+                <div className="title-logo" >
+                    <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+                </div>
+                <span className="title">A propos de moi</span>
+            </div>
             <div className="about">
                 <div className="about-citation">
                     <div>“Je crois que l’on apprend et que l’on progresse sans arrêt. Nous sommes sans cesse mis à l’épreuve." Ayrton Senna</div>

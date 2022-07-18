@@ -1,11 +1,14 @@
-import { faCalendarDays, faLocationDot } from "@fortawesome/free-solid-svg-icons"
+import { faCalendarDays, faGraduationCap, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./Studies.scss"
 
 export default function Studies() {
     return (<div id="studies" className="container">
-        <div className="title">
-            Etudes
+        <div className="title-container">
+            <div className="title-logo" >
+                <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>
+            </div>
+            <span className="title">Etudes</span>
         </div>
 
         <div className="timeline-container">

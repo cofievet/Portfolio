@@ -1,10 +1,15 @@
+import { faDiagramProject } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Projects.scss'
 
 export default function Projects() {
     return (
         <div id="projects" className="container">
-            <div className="title">
-                Projets
+            <div className="title-container">
+                <div className="title-logo" >
+                    <FontAwesomeIcon icon={faDiagramProject}></FontAwesomeIcon>
+                </div>
+                <span className="title">Projets</span>
             </div>
 
             <div className="projects-container">

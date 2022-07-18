@@ -1,4 +1,4 @@
-import { faBook, faBriefcase, faDiagramProject, faGraduationCap, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faBriefcase, faDiagramProject, faEnvelope, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Navbar.scss'
 import { Link } from 'react-scroll'
@@ -14,10 +14,6 @@ export default function Navbar() {
                 <span className='navbar-job'>Développeur Fullstak / .Net</span>
             </div>
             <div className="navbar-links-text">
-                <Link activeClass='active' to="about" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
-                    <FontAwesomeIcon icon={faHome} className="navbar-logo"></FontAwesomeIcon>
-                    <span className='navbar-link-text'>Accueil</span>
-                </Link>
                 <Link activeClass='active' to="experiences" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faBriefcase} className="navbar-logo"></FontAwesomeIcon>
                     <span className='navbar-link-text'>Experiences</span>
@@ -33,6 +29,10 @@ export default function Navbar() {
                 <Link activeClass='active' to="projects" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faDiagramProject} className="navbar-logo"></FontAwesomeIcon>
                     <span className='navbar-link-text'>Projets</span>
+                </Link>
+                <Link activeClass='active' to="contact" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
+                    <FontAwesomeIcon icon={faEnvelope} className="navbar-logo"></FontAwesomeIcon>
+                    <span className='navbar-link-text'>Contact</span>
                 </Link>
             </div>
         </div >
