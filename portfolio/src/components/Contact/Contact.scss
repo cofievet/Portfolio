@@ -31,19 +31,19 @@
 }
 
 .contact-logo {
+    padding: 0 space(1);
     @include logo-size;
 }
 
 .contact-link-text{
     @include font-size-default;
-    padding: 0 space(0.5);
+    padding: 0 space(1);
 }
 
 .contact-link-text-a{
     text-decoration: none;
     color: $accenting-color;
     font-weight: bold;
-    padding: 0 space(0.5);
 
     &:hover{
         color: $secondary-color;

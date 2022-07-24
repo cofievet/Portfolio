@@ -9,8 +9,8 @@
 
 .projects {
     margin: 0 auto;
-  }
-  
+}
+
 
 .project {
     display: flex;
@@ -20,13 +20,13 @@
     margin: space(3) 0;
 }
 
-.project-content{
+.project-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-description{
+.project-description {
     text-align: justify;
     margin: space(2) space(2) space(2) 0;
     color: $secondary-color;
@@ -35,28 +35,32 @@
 }
 
 
-.project-links{
+.project-links {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-link{
+.project-link {
     margin: 0 space(1) 0 0;
     padding: space(0.5) space(1);
     font-size: 20px;
 }
 
-.project-title{
+.project-title {
     font-weight: 600;
     color: $secondary-color;
     text-align: center;
-    
+
     @include font-size-h4;
 }
 
-.project-subtitle{
+.project-subtitle {
     color: $second-title-color;
 
     @include font-size-default;
+}
+
+.project-button {
+    margin: space(1);
 }

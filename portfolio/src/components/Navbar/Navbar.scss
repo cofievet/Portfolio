@@ -24,6 +24,10 @@
     font-weight: bold;
     justify-content: center;
     cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .navbar-name {

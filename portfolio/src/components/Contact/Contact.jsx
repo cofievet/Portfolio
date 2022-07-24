@@ -1,10 +1,13 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 import './Contact.scss'
 
 
 export default function Contact() {
+
+    const [displayEmail, setDisplayEmail] = useState(false)
 
     const age = () => {
         let today = new Date();
@@ -34,20 +37,26 @@ export default function Contact() {
             <div className="contact-links">
                 <div className='contact-link'>
                     <FontAwesomeIcon className='contact-logo' icon={faAt}></FontAwesomeIcon>
+                    <span>:</span>
                     <div className='contact-link-text'>
-                        <span>:</span>
-                        <a className='contact-link-text-a' href='mailto:cofievet@gmail.com'>cofievet@gmail.com</a></div>
+                        {!displayEmail &&
+                            <span className='button' onClick={() => setDisplayEmail(true)}>Afficher l'email</span>
+                        }
+                        {displayEmail &&
+                            <a className='contact-link-text-a' href='mailto:cofievet@gmail.com'>cofievet@gmail.com</a>
+                        }
+                    </div>
                 </div>
                 <div className='contact-link'>
                     <FontAwesomeIcon className='contact-logo' icon={faLinkedin}></FontAwesomeIcon>
+                    <span>:</span>
                     <div className='contact-link-text'>
-                        <span>:</span>
                         <a className='contact-link-text-a' href='https://www.linkedin.com/in/corentin-fievet/' target="_blank" rel="noreferrer">linkedin/corentin-fievet</a></div>
                 </div>
                 <div className='contact-link'>
                     <FontAwesomeIcon className='contact-logo' icon={faGithub}></FontAwesomeIcon>
+                    <span>:</span>
                     <div className='contact-link-text'>
-                        <span>:</span>
                         <a className='contact-link-text-a' href='https://github.com/cofievet/' target="_blank" rel="noreferrer">github/corentin-fievet</a></div>
                 </div>
             </div>

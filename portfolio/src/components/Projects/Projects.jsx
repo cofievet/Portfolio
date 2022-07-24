@@ -31,8 +31,8 @@ export default function Projects() {
                             Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.
                         </div>
                         <div className='buttons-container'>
-                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>GitHub</a>
-                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>Website</a>
+                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button project-button '>GitHub</a>
+                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button project-button '>Web App</a>
                         </div>
                     </div>
 
@@ -50,8 +50,7 @@ export default function Projects() {
                             Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.
                         </div>
                         <div className='buttons-container'>
-                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>GitHub</a>
-                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>Website</a>
+                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button project-button '>GitHub</a>
                         </div>
                     </div>
 
