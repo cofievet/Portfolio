@@ -9,10 +9,10 @@ export default function Navbar() {
 
     return (
         <div className='navbar'>
-            <div className='navbar-header'>
+            <Link className='navbar-header' to="home" spy={true} smooth={true} offset={offset} isDynamic={true}>
                 <span className='navbar-name'>Corentin Fiévet</span>
-                <span className='navbar-job'>Développeur Fullstak / .Net</span>
-            </div>
+                <span className='navbar-job'>Développeur .Net</span>
+            </Link>
             <div className="navbar-links-text">
                 <Link activeClass='active' to="experiences" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faBriefcase} className="navbar-logo"></FontAwesomeIcon>
@@ -20,11 +20,11 @@ export default function Navbar() {
                 </Link>
                 <Link activeClass='active' to="skills" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faBook} className="navbar-logo"></FontAwesomeIcon>
-                    <span className='navbar-link-text'>Compétences</span>
+                    <span className='navbar-link-text'>Qualités</span>
                 </Link>
                 <Link activeClass='active' to="studies" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faGraduationCap} className="navbar-logo"></FontAwesomeIcon>
-                    <span className='navbar-link-text'>Etudes</span>
+                    <span className='navbar-link-text'>Études</span>
                 </Link>
                 <Link activeClass='active' to="projects" spy={true} smooth={true} offset={offset} isDynamic={true} className={'navbar-link'}>
                     <FontAwesomeIcon icon={faDiagramProject} className="navbar-logo"></FontAwesomeIcon>

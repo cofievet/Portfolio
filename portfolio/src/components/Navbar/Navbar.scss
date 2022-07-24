@@ -23,24 +23,27 @@
     align-items: center;
     font-weight: bold;
     justify-content: center;
+    cursor: pointer;
 }
 
 .navbar-name {
     color: $accenting-color;
-    @include font-size-default;
+
+    @include font-size-h4;
 }
 
 .navbar-job {
-    @include font-size-default;
     margin-left: space(1);
     color: $secondary-color;
+
+    @include font-size-h4;
 }
 
 .navbar-links-text {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 30%;
+    width: 550px;
 
     @media all and (max-width: $mobile-max-width) {
         justify-content: center;
@@ -52,11 +55,7 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding: space(1);
-    font-size: $font-size-default-desktop;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: 11px;
-    }
+    @include font-size-default;
 }
 
 .navbar-link {

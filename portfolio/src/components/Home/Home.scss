@@ -15,11 +15,8 @@
     font-family: $font-family;
     color: $secondary-color;
     flex: 1;
-    font-size: 50px;
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: 30px;
-    }
+    
+    @include font-size-h1;
 }
 
 .home-subtitle-body{
@@ -49,6 +46,10 @@
     text-decoration: none;
     color: $accenting-color;
     cursor: pointer;
+
+    &:hover{
+        color: $secondary-color;
+    }
 }
 
 .home-logo{

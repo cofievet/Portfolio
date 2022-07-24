@@ -8,7 +8,7 @@ export default function Studies() {
             <div className="title-logo" >
                 <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>
             </div>
-            <span className="title">Etudes</span>
+            <span className="title">Études</span>
         </div>
 
         <div className="timeline-container">

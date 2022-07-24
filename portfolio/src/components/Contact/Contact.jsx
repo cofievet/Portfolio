@@ -5,6 +5,19 @@ import './Contact.scss'
 
 
 export default function Contact() {
+
+    const age = () => {
+        let today = new Date();
+        let birthDate = new Date('02/03/1996');
+        let age = today.getFullYear() - birthDate.getFullYear();
+        let m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
+
+
     return (
         <div id="contact" className='container contact-container'>
             <div className="title-container">
@@ -14,7 +27,7 @@ export default function Contact() {
                 <span className="title">Contact</span>
             </div>
             <div className='contact-informations'>
-                <span>Corentin Fiévet 26 ans</span>
+                <span>Corentin Fiévet - 02/03/1996 - {age()} ans</span>
                 <span>Permis A et B, véhiculés</span>
             </div>
 

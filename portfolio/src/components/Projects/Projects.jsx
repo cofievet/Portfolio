@@ -49,6 +49,10 @@ export default function Projects() {
                         <div className="project-description">
                             Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.
                         </div>
+                        <div className='buttons-container'>
+                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>GitHub</a>
+                            <a href='https://github.com/' target="_blank" rel="noreferrer" className='button'>Website</a>
+                        </div>
                     </div>
 
                 </div>

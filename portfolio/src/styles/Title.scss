@@ -7,8 +7,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    @include font-size-h1;
-    font-weight: 600;
+    @include font-size-h2;
 }
 
 .title-logo{
@@ -18,7 +17,7 @@
 }
 
 .title {
-    padding: space(0) space(1);
+    padding: space(0) space(2);
 }
 
 .title-inline {

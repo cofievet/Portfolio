@@ -52,11 +52,11 @@
     color: $secondary-color;
     text-align: center;
     
-    @include font-size-h2;
+    @include font-size-h4;
 }
 
 .project-subtitle{
     color: $second-title-color;
 
-    @include font-size-tertiary;
+    @include font-size-default;
 }

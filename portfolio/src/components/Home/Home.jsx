@@ -9,7 +9,6 @@ export default function Home() {
         <div className='container home-container' id='home'>
             <div className='home-presentation'>
                 <div className='home-title'>
-                    <div>Corentin Fiévet</div>
                     <div>Ingénieur d'études Développeur .Net</div>
                     <div className='home-company'>CDiscount</div>
                     <div className='logos-container'>

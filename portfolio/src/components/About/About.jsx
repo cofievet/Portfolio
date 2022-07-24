@@ -1,4 +1,4 @@
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./About.scss";
 
@@ -7,9 +7,9 @@ export default function About() {
         <div id="about" className="container">
             <div className="title-container">
                 <div className="title-logo" >
-                    <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faPencil} className="fa-light"></FontAwesomeIcon>
                 </div>
-                <span className="title">A propos de moi</span>
+                <span className="title">À propos de moi</span>
             </div>
             <div className="about">
                 <div className="about-citation">

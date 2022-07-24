@@ -1,27 +1,27 @@
 @import "./Variables.scss";
 @import "./Functions.scss";
 
-.buttons-container{
+.buttons-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.button{
+.button {
     display: flex;
     padding: space(1) space(1);
     margin: space(1);
     border-radius: space(1);
-    background-color: $accenting-color;
-    color: $primary-color;
+    background-color: $primary-color;
+    color: $accenting-color;
     cursor: pointer;
     text-decoration: none;
     border: solid 1px $accenting-color;
 
-    &:hover{
-        background-color:  $primary-color;
-        color: $accenting-color;
-        border: solid 1px $accenting-color;
+    &:hover {
+        background-color: $accenting-color;
+        color: $primary-color;
+        border: solid 1px $primary-color;
     }
 }

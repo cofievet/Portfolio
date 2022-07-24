@@ -9,11 +9,7 @@
 .container {
     &:not(:last-child) {
         border-bottom: solid 2px black;
-        padding-bottom: space(10);
-
-        @media all and (max-width: $mobile-max-width) {
-            padding-bottom: space(5);
-        }
+        padding-bottom: space(8);
     }
 
     padding: space(5) 0 space(5) 0;

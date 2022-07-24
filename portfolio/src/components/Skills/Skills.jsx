@@ -9,7 +9,7 @@ export default function Skills() {
                 <div className="title-logo" >
                     <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
                 </div>
-                <span className="title">Compétences</span>
+                <span className="title">Qualités</span>
             </div>
             <div className="skills-container">
                 <div className="skill">

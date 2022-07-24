@@ -5,14 +5,26 @@ $laptops-min-width: 769px;
 $laptops-max-width: 1024px;
 $desktops-min-width: 1025px;
 
-$font-size-default-desktop: 18px;
-$font-size-default-tablet: 16px;
-$font-size-default-mobile: 14px;
+$font-size-h1-desktop: 48px;
+$font-size-h2-desktop: $font-size-h1-desktop - 8px;
+$font-size-h3-desktop: $font-size-h2-desktop - 8px;
+$font-size-h4-desktop: $font-size-h3-desktop - 8px;
+$font-size-default-desktop: 16px;
+$font-size-little-desktop: 14px;
 
-$ratio-h1: 1.33; // *
-$ratio-h2: 1.25; // *
-$ratio-secondary: 2px; // -
-$ratio-tertiary: 1px; // +
+$font-size-h1-tablet: 48px;
+$font-size-h2-tablet: $font-size-h1-tablet - 8px;
+$font-size-h3-tablet: $font-size-h2-tablet - 8px;
+$font-size-h4-tablet: $font-size-h3-tablet - 8px;
+$font-size-default-tablet: 16px;
+$font-size-little-tablet: 14px;
+
+$font-size-h1-mobile: 48px;
+$font-size-h2-mobile: $font-size-h1-mobile - 8px;
+$font-size-h3-mobile: $font-size-h2-mobile - 8px;
+$font-size-h4-mobile: $font-size-h3-mobile - 8px;
+$font-size-default-mobile: 16px;
+$font-size-little-mobile: 14px;
 
 $logo-size: 25px;
 
@@ -29,28 +41,54 @@ $subtitle-color: $accenting-color;
 $text-color: $secondary-color;
 
 @mixin font-size-h1() {
-    font-size: $font-size-default-desktop * $ratio-h1;
+    font-size: $font-size-h1-desktop;
 
     @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-        font-size: $font-size-default-tablet * $ratio-h1;
+        font-size: $font-size-h1-tablet;
     }
 
     @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-default-mobile * $ratio-h1;
+        font-size: $font-size-h1-mobile;
     }
 }
 
 @mixin font-size-h2() {
-    font-size: $font-size-default-desktop * $ratio-h2;
+    font-size: $font-size-h2-desktop;
 
     @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-        font-size: $font-size-default-tablet * $ratio-h2;
+        font-size: $font-size-h2-tablet;
     }
 
     @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-default-mobile * $ratio-h2;
+        font-size: $font-size-h2-mobile;
     }
 }
+
+@mixin font-size-h3() {
+    font-size: $font-size-h3-desktop;
+
+    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        font-size: $font-size-h3-tablet;
+    }
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-h3-mobile;
+    }
+}
+
+@mixin font-size-h4() {
+    font-size: $font-size-h4-desktop;
+
+    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        font-size: $font-size-h4-tablet;
+    }
+
+    @media all and (max-width: $mobile-max-width) {
+        font-size: $font-size-h4-mobile;
+    }
+}
+
+
 
 @mixin font-size-default() {
     font-size: $font-size-default-desktop;
@@ -65,26 +103,14 @@ $text-color: $secondary-color;
 }
 
 @mixin font-size-secondary() {
-    font-size: $font-size-default-desktop - $ratio-secondary;
+    font-size: $font-size-little-desktop;
 
     @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-        font-size: $font-size-default-tablet - $ratio-secondary;
+        font-size: $font-size-little-tablet;
     }
 
     @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-default-mobile - $ratio-secondary;
-    }
-}
-
-@mixin font-size-tertiary() {
-    font-size: $font-size-default-desktop + $ratio-tertiary;
-
-    @media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-        font-size: $font-size-default-tablet + $ratio-tertiary;
-    }
-
-    @media all and (max-width: $mobile-max-width) {
-        font-size: $font-size-default-mobile + $ratio-tertiary;
+        font-size: $font-size-little-mobile;
     }
 }
 

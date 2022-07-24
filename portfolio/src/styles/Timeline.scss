@@ -27,11 +27,13 @@
 
   .timeline-duration,
   .timeline-company {
-    @include font-size-secondary;
     color: $secondary-color;
     margin: 0;
     display: flex;
     align-items: center;
+    font-weight: 600;
+
+    @include font-size-secondary;
   }
 
   .location-logo {
@@ -47,10 +49,10 @@
   .timeline-title {
     margin: 0 0 space(1);
     color: $secondary-color;
-    font-weight: 600;
+    font-weight: bold;
     text-transform: uppercase;
 
-    @include font-size-h2;
+    @include font-size-h4;
   }
 
   .timeline-text {
