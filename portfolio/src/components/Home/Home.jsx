@@ -9,19 +9,25 @@ export default function Home() {
         <div className='container home-container' id='home'>
             <div className='home-presentation'>
                 <div className='home-title'>
-                    <div>Ingénieur d'études Développeur .Net</div>
-                    <div className='home-company'>CDiscount</div>
-                    <div className='logos-container'>
-                        <a href='mailto:cofievet@gmail.com' className='home-logo-link' >
-                            <FontAwesomeIcon icon={faAt} className="home-logo" />
-                        </a>
-                        <a href='https://www.linkedin.com/in/corentin-fievet/' target="_blank" rel="noreferrer" className='home-logo-link' >
-                            <FontAwesomeIcon icon={faLinkedin} className="home-logo" />
-                        </a>
-                        <a href='https://github.com/cofievet' target="_blank" rel="noreferrer" className='home-logo-link' >
-                            <FontAwesomeIcon icon={faGithub} className="home-logo" />
-                        </a>
-                    </div>
+                    <span className='home-block'></span>
+                    <h1>Ingénieur d'études Développeur .Net<span></span></h1>
+                </div>
+
+                <div class="home-company">
+                    <div class="home-block"></div>
+                    <h1>CDiscount</h1>
+                </div>
+
+                <div className='logos-container'>
+                    <a href='mailto:cofievet@gmail.com' className='home-logo-link' >
+                        <FontAwesomeIcon icon={faAt} className="home-logo" />
+                    </a>
+                    <a href='https://www.linkedin.com/in/corentin-fievet/' target="_blank" rel="noreferrer" className='home-logo-link' >
+                        <FontAwesomeIcon icon={faLinkedin} className="home-logo" />
+                    </a>
+                    <a href='https://github.com/cofievet' target="_blank" rel="noreferrer" className='home-logo-link' >
+                        <FontAwesomeIcon icon={faGithub} className="home-logo" />
+                    </a>
                 </div>
             </div>
 
